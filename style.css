@@ -1,0 +1,683 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+
+select,
+input[type=number] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eee;
+box-shadow: inset -2px -2px rgba(0,0,0,0.1);
+transition: .3s ease-in-out;
+
+}
+
+.botao,
+.botao2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  outline: none;
+}
+
+
+.botao2:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.botao2 {
+  background-color: #333;
+  margin-right: 10px;
+}
+
+
+select,
+input[type=number] {
+  transition: 0.3s ease-in-out;
+}
+
+select:hover,
+input[type=number]:hover {
+  transform: scale(1.1);
+  background-color: #ddd;
+}
+
+select:focus,
+input[type=number]:focus {
+outline:none;
+transform: scale(1.05);
+background-color:#fff;
+}
+
+
+@keyframes sound {
+  from {
+    transform-origin: left top;
+  }
+  to {
+    transform-origin: right bottom;
+  }
+}
+
+
+
+.botao i {
+  margin-right: 10px;
+}
+
+.botao:nth-child(2) {
+  background-color: #00ff00;
+}
+
+.botao:nth-child(1) {
+  background-color: #00a0ff;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+
+
+
+
+
+@keyframes input-focus {
+  from {
+    transform-origin: left-top;
+  }}
+
+
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;  
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: 1px solid #333; 
+  padding-bottom: 10px;  
+}
+
+p {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 20px; 
+}
+
+select {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+input[type=number] {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+
+
+
+.botao,
+.botao2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  outline: none;
+}
+
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+select,
+input[type=number] {
+  transition: 0.3s ease-in-out;
+}
+
+select:hover,
+input[type=number]:hover {
+  transform: scale(1.1);
+  background-color: #ddd;
+}
+
+select:focus,
+input[type=number]:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  animation: sound 0.5s linear infinite alternate-reverse both paused running;
+}
+
+@keyframes sound {
+  from {
+    transform-origin: left top;
+  }
+  to {
+    transform-origin: right bottom;
+  }
+}
+
+
+.botao i {
+  margin-right: 10px;
+}
+
+.botao:nth-child(2) {
+  background-color: #00ff00;
+}
+
+.botao:nth-child(1) {
+  background-color: #00a0ff;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+
+
+
+.botao:last-child {
+  background-color: #333;
+  margin-right: 0;
+}
+
+.botao:hover {
+  background-color: #444;
+  /* Adicionei um efeito de escala para dar mais destaque ao botão */
+  transform: scale(1.1);
+}
+
+
+
+
+.conteudo-menu {
+    display:flex; 
+    align-items:center; 
+    margin-top:auto; 
+}
+
+.texto-inicio {
+  color: blueviolet;
+  background-color: azure;
+  animation: escrever 5s infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #000;
+  width: 0;
+}
+
+@keyframes escrever {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.elemento {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color-scheme: black;
+  left: 5vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.menu {
+  position: top;
+}
+
+.menu label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 33px;
+  cursor: pointer;
+}
+
+.menu-itens {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.menu-toggle:checked ~ .menu-itens {
+  display: block;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+
+.menu {
+  position: top;
+}
+
+.menu label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 33px;
+  cursor: pointer;
+}
+
+.menu-itens {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.menu-toggle:checked ~ .menu-itens {
+  display: block;
+}
+
+body{
+  height: 100vh;
+background-color: #292c35;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+nav.menu-lateral{
+  width: 80px;
+  height: 100%;
+  background-color: #202020;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #FF0077;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+nav.menu-lateral:hover{
+  width: 320px;
+}
+.btn-expandir{
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expandir > i {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul{
+  height: 100%;
+  list-style-type: none;
+}
+ul li.item-menu{
+  transition: .2s;
+}
+
+ul li.ativo{
+  background-color: #FF0077;
+}
+
+ul li.item-menu:hover{
+  background-color: #FF0077;
+}
+ul li.item-menu a{
+ color: #fff;
+ text-decoration: none;
+ font-size: 20px;
+ padding: 20px 4%;
+ display: flex;
+ margin-bottom: 20px;
+ line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+ margin-left: 40px;
+ opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+  font-size: 30px;
+  margin-left: 10px;}
+
+
+
+  .botao-home {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .botao-home::after,
+  .botao-home::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  .botao-home::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+  }
+  
+
+  .botao-home:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  .botao-home:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .botao-home:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
+  .botoes2-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  
+
+  .botao-tblv {
+    background-color: ghostwhite;
+    border-radius: 10px;
+    appearance: none;
+    background-color: #FFFFFF;
+    border-width: 10px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Clarkson,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+  
+  .botao-tblv:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #EBEBEB;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "Ver tabela de VENDAS";
+    text-align: center;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+  }
+  
+  .botao-tblv:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .botao-tblv:after {
+    background-color: #FFFFFF;
+  }
+  
+  .botao-tblv span {
+    z-index: 1;
+    position: relative;
+  }
+  .fa-money-bill {
+    text-align: 20px;
+    padding: 5px;
+    font-size: 15px; /* Altere o tamanho do ícone */    /* Outras propriedades CSS para personalizar o ícone */
+  }
+ 
+
+  .container{
+    margin-top: 20vh;
+    margin-left: 46vh;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+  :root {
+    --text-color: hsla(210, 50%, 85%, 1);
+    --shadow-color: hsla(210, 40%, 52%, .4);
+    --btn-color: hsl(210, 80%, 42%);
+    --bg-color: #141218;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+
+  button {
+    align-items: center;
+    position:relative;
+    padding: 10px 20px;  
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+    font-family: "Source Code Pro";
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 30px;  
+    color: var(--text-color);
+    
+    background-color: var(--btn-color);
+    box-shadow: var(--shadow-color) 2px 2px 22px;
+    border-radius: 4px; 
+    z-index: 0;  
+    overflow: hidden;   
+  }
+  
+  button:focus {
+    outline-color: transparent;
+    box-shadow: var(--btn-color) 2px 2px 22px;
+  }
+  
+  .right::after, button::after {
+    content: var(--content);
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    padding: 40px 40px;
+    pointer-events:none;
+  }
+  
+  button::after{
+    font-weight: 200;
+    top: -30px;
+    left: -20px;
+  } 
+  
+  .right, .left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  .right {
+    left: 66%;
+  }
+  .left {
+    right: 66%;
+  }
+  .right::after {
+    top: -30px;
+    left: calc(-66% - 20px);
+    
+    background-color: var(--bg-color);
+    color:transparent;
+    transition: transform .4s ease-out;
+    transform: translate(0, -90%) rotate(0deg)
+  }
+  
+  button:hover .right::after {
+    transform: translate(0, -47%) rotate(0deg)
+  }
+  
+  button .right:hover::after {
+    transform: translate(0, -50%) rotate(-7deg)
+  }
+  
+  button .left:hover ~ .right::after {
+    transform: translate(0, -50%) rotate(7deg)
+  }
+  
+ 
+
+
+
+.titulo2{
+  background-color: #00a0ff;
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color:  rgba(26, 75, 138, 0.693);; }
+}
+
+#animacao-titulo {
+  overflow: hidden;
+  border-right: 0.08em solid rgba(26, 75, 138, 0.693); /* Define um cursor piscante */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  animation:
+    typing 4s steps(20, end),
+    blink-caret 0.75s step-end infinite;
+}
+
